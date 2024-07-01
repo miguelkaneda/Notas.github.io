@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloc de Notas Personal</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <h1>Bloc de Notas</h1>
+            <nav>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#notas" class="text-white">Notas</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#contacto" class="text-white">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-4">
+        <section id="banner" class="bg-light p-4 text-center">
+            <h2>Bienvenido a tu Bloc de Notas Personal</h2>
+            <p>Organiza tus notas</p>
+        </section>
+
+        <section id="notas" class="py-4">
+            <div class="container">
+                <h2>Tus Notas</h2>
+                <form id="formulario-nota">
+                    <div class="form-group">
+                        <label for="titulo">Titulo:</label>
+                        <input type="text" id="titulo" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="contenido">Contenido:</label>
+                        <textarea id="contenido" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar Nota</button>
+                </form>
+                <input type="text" id="buscador" class="form-control mt-4" placeholder="Buscar notas..." />
+                <div id="lista-notas" class="mt-4"></div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-4">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>Puedes contactarnos a traves de nuestras redes sociales.</p>
+                <p>no hay jeje</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <button id="boton-info" class="btn btn-info">Info</button>
+            <div id="info" class="oculto mt-3">
+                <p>Carrera: Disenio Multimedial</p>
+                <p>Materia: Programacion y diseno web1</p>
+                <p>Turno: Noche</p>
+                <p>Comision: DMN3BP</p>
+                <p>Ano: 2024</p>
+                <p>Profesor: Rubio Antonio</p>
+                <p>Alumno: Cariddi Nicolas</p>
+                <img src="../recursos/mi_foto.jpg" alt="Foto de Nicolas" style="width: 8rem; height: 8rem;">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script defer src="script.js"></script>
+</body>
+
+</html>
